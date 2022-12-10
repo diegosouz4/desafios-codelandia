@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 01 | Codelândia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dir/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a href="#" class="nav__link">Codelândia</a>
+        <a href="#" class="nav__link">blog</a>
+      </nav>
+
+      <fieldset class="header__search">
+        <button class="search__btn"><span class="sreader">Buscar</span><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.6484 25.0342L19.04 17.4258C20.2207 15.8994 20.8594 14.0332 20.8594 12.0703C20.8594 9.7207 19.9424 7.51758 18.2842 5.85645C16.626 4.19531 14.417 3.28125 12.0703 3.28125C9.72363 3.28125 7.51465 4.19824 5.85645 5.85645C4.19531 7.51465 3.28125 9.7207 3.28125 12.0703C3.28125 14.417 4.19824 16.626 5.85645 18.2842C7.51465 19.9453 9.7207 20.8594 12.0703 20.8594C14.0332 20.8594 15.8965 20.2207 17.4229 19.043L25.0313 26.6484C25.0536 26.6708 25.08 26.6885 25.1092 26.7006C25.1384 26.7126 25.1696 26.7189 25.2012 26.7189C25.2327 26.7189 25.264 26.7126 25.2931 26.7006C25.3223 26.6885 25.3488 26.6708 25.3711 26.6484L26.6484 25.374C26.6708 25.3517 26.6885 25.3252 26.7006 25.2961C26.7126 25.2669 26.7189 25.2357 26.7189 25.2041C26.7189 25.1725 26.7126 25.1413 26.7006 25.1121C26.6885 25.083 26.6708 25.0565 26.6484 25.0342ZM16.7109 16.7109C15.4688 17.9502 13.8223 18.6328 12.0703 18.6328C10.3184 18.6328 8.67188 17.9502 7.42969 16.7109C6.19043 15.4688 5.50781 13.8223 5.50781 12.0703C5.50781 10.3184 6.19043 8.66895 7.42969 7.42969C8.67188 6.19043 10.3184 5.50781 12.0703 5.50781C13.8223 5.50781 15.4717 6.1875 16.7109 7.42969C17.9502 8.67188 18.6328 10.3184 18.6328 12.0703C18.6328 13.8223 17.9502 15.4717 16.7109 16.7109Z" fill="white"/>
+        </svg></button>
+        <input class="search__input" type="search" name="search" placeholder="Pesquisar no Blog">
+      </fieldset>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="articles">
+      <div class="container">
+        <ul class="articles__list">
+          <li class="list__item">
+            <div class="item__tag">
+              <p class="tag__date">02 de jul, 2021</p>
+              <button class="tag__like" data-liked="false">
+                <span class="sreader">Curtir</span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" xml:space="preserve"><path d="M23.3 7.2c-.1-.5-.3-1-.6-1.4-.2-.5-.6-.9-.9-1.2-.5-.5-1.2-1-1.9-1.3-1.4-.6-3-.6-4.4 0-.7.3-1.3.7-1.8 1.2l-.1.1-1 1-1-1-.1-.1c-.6-.5-1.2-.9-1.9-1.2-1.4-.6-3-.6-4.4 0-.8.3-1.4.7-1.9 1.3-.8.7-1.3 1.6-1.6 2.6-.1.5-.2 1-.2 1.6 0 .5.1 1 .2 1.5s.3 1 .6 1.4c.3.5.6.9 1 1.2l9.2 9.2 9.2-9.2c.4-.4.7-.8.9-1.2.5-.9.8-1.9.8-2.9 0-.5 0-1.1-.1-1.6z"/></svg>
+              </button>
+            </div>
+            <h2 class="item__title">Agora é oficial: o Windows 11 está vindo</h2>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+          </li>
+
+          <li class="list__item">
+            <div class="item__tag">
+              <p class="tag__date">02 de jul, 2021</p>
+              <button class="tag__like" data-liked="false">
+                <span class="sreader">Curtir</span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" xml:space="preserve"><path d="M23.3 7.2c-.1-.5-.3-1-.6-1.4-.2-.5-.6-.9-.9-1.2-.5-.5-1.2-1-1.9-1.3-1.4-.6-3-.6-4.4 0-.7.3-1.3.7-1.8 1.2l-.1.1-1 1-1-1-.1-.1c-.6-.5-1.2-.9-1.9-1.2-1.4-.6-3-.6-4.4 0-.8.3-1.4.7-1.9 1.3-.8.7-1.3 1.6-1.6 2.6-.1.5-.2 1-.2 1.6 0 .5.1 1 .2 1.5s.3 1 .6 1.4c.3.5.6.9 1 1.2l9.2 9.2 9.2-9.2c.4-.4.7-.8.9-1.2.5-.9.8-1.9.8-2.9 0-.5 0-1.1-.1-1.6z"/></svg>
+              </button>
+            </div>
+            <h2 class="item__title">Tim Berners-Lee vai leiloar código-fonte da web</h2>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+          </li>
+
+          <li class="list__item">
+            <div class="item__tag">
+              <p class="tag__date">02 de jul, 2021</p>
+              <button class="tag__like" data-liked="false">
+                <span class="sreader">Curtir</span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" xml:space="preserve"><path d="M23.3 7.2c-.1-.5-.3-1-.6-1.4-.2-.5-.6-.9-.9-1.2-.5-.5-1.2-1-1.9-1.3-1.4-.6-3-.6-4.4 0-.7.3-1.3.7-1.8 1.2l-.1.1-1 1-1-1-.1-.1c-.6-.5-1.2-.9-1.9-1.2-1.4-.6-3-.6-4.4 0-.8.3-1.4.7-1.9 1.3-.8.7-1.3 1.6-1.6 2.6-.1.5-.2 1-.2 1.6 0 .5.1 1 .2 1.5s.3 1 .6 1.4c.3.5.6.9 1 1.2l9.2 9.2 9.2-9.2c.4-.4.7-.8.9-1.2.5-.9.8-1.9.8-2.9 0-.5 0-1.1-.1-1.6z"/></svg>
+              </button>
+            </div>
+            <h2 class="item__title">Tem Firefox novo no pedaço e você vai querer migrar</h2>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
+          </li>
+
+          <li class="list__item">
+            <div class="item__tag">
+              <p class="tag__date">02 de jul, 2021</p>
+              <button class="tag__like" data-liked="false">
+                <span class="sreader">Curtir</span>
+                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" xml:space="preserve"><path d="M23.3 7.2c-.1-.5-.3-1-.6-1.4-.2-.5-.6-.9-.9-1.2-.5-.5-1.2-1-1.9-1.3-1.4-.6-3-.6-4.4 0-.7.3-1.3.7-1.8 1.2l-.1.1-1 1-1-1-.1-.1c-.6-.5-1.2-.9-1.9-1.2-1.4-.6-3-.6-4.4 0-.8.3-1.4.7-1.9 1.3-.8.7-1.3 1.6-1.6 2.6-.1.5-.2 1-.2 1.6 0 .5.1 1 .2 1.5s.3 1 .6 1.4c.3.5.6.9 1 1.2l9.2 9.2 9.2-9.2c.4-.4.7-.8.9-1.2.5-.9.8-1.9.8-2.9 0-.5 0-1.1-.1-1.6z"/></svg>
+              </button>
+            </div>
+            <h2 class="item__title">John McAfee, criador do antivírus McAfee, morre</h2>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./dir/js/script.js"></script>
+</body>
+</html>

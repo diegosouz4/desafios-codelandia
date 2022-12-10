@@ -1,0 +1,27 @@
+:root {
+  --font-family: "Lexend Deca", sans-serif;
+  --font-family-2: "Inter", sans-serif;
+
+  --font-regular: 400;
+  --font-bold: 500;
+
+  --font-size-16: 0.875rem;
+  --font-size-18: var(--font-size-16);
+  --font-size-24: 1.125rem;
+  --font-size-26: var(--font-size-24);
+  @media (min-width: 768px) {
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-24: 1.5rem;
+    --font-size-26: 1.625rem;
+  }
+
+  --border-radius: 0.25rem;
+
+  --purple: #574ae8;
+  --white: #fff;
+  --white-200: #f3f5f7;
+  --gray: #717171;
+  --gray-dark: #1a202c;
+  --gradient: linear-gradient(270deg, #3ea1db 0%, #574ae8 100%);
+}

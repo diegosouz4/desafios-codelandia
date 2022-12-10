@@ -1,0 +1,28 @@
+{
+  "name": "desafios-codelandia",
+  "version": "1.0.0",
+  "description": "A Codelândia é uma comunidade para desenvolvedores no discord. São lançados desafios semanalmente, focando no desenvolvimento Front-end. O grau de  dificuldade dos desafios vão aumentando conforme são lançados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegosouz4/desafios-codelandia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegosouz4/desafios-codelandia/issues"
+  },
+  "homepage": "https://github.com/diegosouz4/desafios-codelandia#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.56.2"
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+
+  --font-regular: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --font-size-16: 1rem;
+  --font-size-18: var(--font-size-16);
+  --font-size-20: var(--font-size-16);
+  --font-size-24: var(--font-size-16);
+  --font-size-32: 1.75rem;
+  --font-size-48: var(--font-size-32);
+  @media (min-width: 768px) {
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-32: 2rem;
+    --font-size-48: 3rem;
+  }
+
+  --white: #f9f9f9;
+  --white-200: #ebe9ea;
+  --gray: #474747;
+  --black: #181818;
+
+  --pop: cubic-bezier(0.54,-0.32, 0.45, 1.29);
+}

@@ -1,0 +1,13 @@
+.footer {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.625rem 0;
+  text-align: center;
+  @media (min-width: 768px) {
+    padding: 1.25rem 0;
+  }
+
+  &__text{
+    font-size: var(--font-size-18);
+  }
+}

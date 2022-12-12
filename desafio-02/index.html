@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 02 | Codelândia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./dir/css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container">
+      <p class="top-bar__text">Ganhe R$ 10,00 de desconto no frete</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__link">JordanShoes</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" aria-label="banner destaque">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="title hero__title">A melhor loja de Jordan</h1>
+          <p class="hero__text" id="typed"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="produtos">
+      <div class="container">
+        <h2 class="subtitle produtos__title">Destaques</h2>
+        <p class="produtos__text">Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+
+        <ul class="produtos__list">
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-verde.png" alt="Nike Verde" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Verde</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-azul.png" alt="Nike Azul" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Azul</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-branco-azul.png" alt="Nike branco e azul" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Branco e azul</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-cinza.png" alt="Nike cinza" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Cinza</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-vermelho.png" alt="Nike vermelho" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Vermelho</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-laranja.png" alt="Nike laranja" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan laranja</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-branco-cinza.png" alt="Nike Branco e cinza" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Branco e cinza</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+          <li class="list__item">
+            <img width="200" height="120" src="./dir/img/tenis-nike-preto.png" alt="Nike preto" class="item__thumb">
+            <div class="item__info">
+              <h3 class="info__name">Jordan Preto</h3>
+              <p class="info__price">99</p>
+              <button class="info__btn">Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    initAnimations();
+    
+    const typed = new Typed('#typed', {
+      strings: ['O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.'],
+      typeSpeed: 30,
+    });
+        
+    function initAnimations() {
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "30px",
+        duration: "650",
+        reset: true,
+      });
+
+      sr.reveal(".produtos__title", {delay: 200});
+      sr.reveal(".produtos__text", {delay: 400});
+      sr.reveal(".list__item", {delay: 600});
+    }
+
+  </script>
+</body>
+</html>

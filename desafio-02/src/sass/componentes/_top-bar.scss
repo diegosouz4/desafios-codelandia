@@ -1,0 +1,12 @@
+.top-bar {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+  @media (min-width: 768px) {
+    padding: 1.25rem 0;
+  }
+  &__text {
+    font-size: var(--font-size-16);
+  }
+}

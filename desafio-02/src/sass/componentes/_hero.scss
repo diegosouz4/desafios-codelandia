@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+  background: url("../img/tenis-nike-background.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 370px;
+    @media (min-height: 768px) {
+      justify-content: initial;
+    }
+    .hero__content {
+      color: var(--white);
+
+      .hero__text {
+        font-size: var(--font-size-24);
+        line-height: 1.6;
+        margin: 0;
+        @media (min-width: 768px) {
+          max-width: 650px;
+        }
+      }
+    }
+  }
+}

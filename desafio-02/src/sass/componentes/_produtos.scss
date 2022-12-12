@@ -1,0 +1,100 @@
+.produtos {
+  padding: 3.125rem 0;
+  @media (min-width: 768px) {
+    padding: 6.25rem 0;
+  }
+
+  .produtos__text {
+    font-size: var(--font-size-20);
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 3.75rem;
+  }
+
+  .produtos__list {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      .list__item {
+        flex: 1 1 300px;
+      }
+    }
+
+    .list__item {
+      background: var(--white-200);
+      margin: 0.625rem;
+      min-height: 300px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      &:focus,
+      &:hover {
+        .item__info{
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+        .item__thumb {
+          transform: scale(1.3) translate3d(0, -20px, 0);
+        }
+      }
+
+      .item__thumb {
+        position: relative;
+        transition: transform 350ms var(--pop);
+      }
+
+      .item__info{
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background-color: var(--black);
+        color: var(--white);
+        border-radius: .25rem .25rem 0 0;
+
+        opacity: 0;
+        transform: translate3d(0, 100px, 0);
+        transition: opacity 450ms ease-in-out 150ms, transform 350ms var(--pop);
+
+        display: grid;
+        grid-template-columns:  1fr auto;
+        grid-template-rows: auto 1fr;
+        gap: .625rem;
+        .info__name {
+          font-size: var(--font-size-18);
+          line-height: 1;
+          margin: 0;
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+        .info__price{
+          font-size: var(--font-size-16);
+          margin: 0;
+          grid-column: 2/-1;
+          grid-row: 1/2;
+        }
+        .info__btn{
+          cursor: pointer;
+          border: 0;
+          background: none;
+          font-family: var(--font-family);
+          font-size: var(--font-size-16);
+          font-weight: var(--font-semibold);
+          text-transform: uppercase;
+          color: var(--black);
+          background-color: var(--white-200);
+          padding: .3125rem 0;
+          border-radius: 2px;
+          grid-column: 1/-1;
+          grid-row: 2/-1;
+        }
+      }
+    }
+  }
+}

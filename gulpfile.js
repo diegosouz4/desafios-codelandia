@@ -4,7 +4,7 @@ const cleanCss = require("gulp-clean-css");
 const autoprefixer = require("gulp-autoprefixer");
 const sourcemap = require("gulp-sourcemaps");
 
-const path = "./desafio-02";
+const path = "./desafio-03";
 const srcCSSPath = path + "/src/sass/**/*.scss";
 const dirCSSPath = path + "/dir/css";
 

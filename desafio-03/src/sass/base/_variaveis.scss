@@ -1,0 +1,36 @@
+:root {
+  --font-family: "Merriweather", serif;
+  --font-family-2: "Lato", sans-serif;
+
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-19: var(--font-size-18);
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-size-36: var(--font-size-32);
+
+  @media (min-width: 768px) {
+    --font-size-19: 1.1875rem;
+    --font-size-36: 2.25rem;
+  }
+
+  --purple: #d7d4ff;
+  --purple-200: #6c63ff;
+  --white: #fff;
+  --white-200: #f9f9f9;
+  --gray: #555;
+  --gray-dark: #2a2a2a;
+
+  --card-red: #ff6363;
+  --card-blue: #63ecff;
+  --card-pink: #f363ff;
+  --card-green: #63ff73;
+  --card-yellow: #ffdd63;
+  --card-purple: #6663ff;
+
+  --pop: cubic-bezier(0.54, -0.32, 0.45, 1.29);
+}
